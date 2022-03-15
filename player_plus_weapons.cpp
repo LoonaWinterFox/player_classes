@@ -54,10 +54,9 @@ int main(){
 	char weapon = weapons_list[5];
 	std::cout << weapon, "\n";
 
-	char* wl = weapons_list;
-	*(wl + 4) = 'a';
-
-	weapon = *(wl + 4);
+	// char* wl = weapons_list;
+	weapons_list[4] = 'a'; // *(wl + 4) = 'a';
+	weapon = weapons_list[4]; // weapon = *(wl + 4);
 
 	std::cout << weapon, "\n";
 	return 0;
