@@ -9,7 +9,7 @@ private:
 	int max_health;
 	int health;
 	bool is_alive = true;
-	int weapon = 5;
+	Weapon weapon = 5;
 public:
 	float GetHealth(){return health;}
 	float GetX(){return x;}
@@ -44,7 +44,7 @@ int main(){
 	Player player;
 	player.SetHealth(100);
 	std::cout << player.GetHealth(), "\n";
-	player.GetWeapon(10);
-	std::cout << player.ReturnWeaponId(), "\n";
+	player->GetWeapon(10);
+	std::cout << player->ReturnWeaponId(), "\n";
 	return 0;
 }
