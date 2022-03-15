@@ -1,16 +1,20 @@
 
 #include <iostream>
 
+/*
 typedef int Weapon;
-class Player{
 Weapons weapon_id[1000];
+*/
+
+class Player{
 private:
 	float x, y, z = 0.0;
 	float speed;
 	int max_health;
 	int health;
 	bool is_alive = true;
-	Weapon weapon = 5;
+//	Weapon weapon = 5;
+
 public:
 	float GetHealth(){return health;}
 	float GetX(){return x;}
@@ -30,8 +34,8 @@ public:
 		}
 
 	}
-
-	Weapon* GetWeapon(int& list, int index){
+/*
+	Weapon GetWeapon(int list, int index){
 		weapon = list + index;
 		return &(weapon);
 	}
@@ -39,12 +43,18 @@ public:
 	Weapon ReturnWeaponId(){
 		return weapon;
 	}
-
+*/
 };
+
 int main(){
+	char weapons_list[7] = {'a','b','c','d','e','r','f'};
 	Player player;
 	player.SetHealth(100);
 	std::cout << player.GetHealth(), "\n";
-	player->GetWeapon(10);
-	std::cout << player->ReturnWeaponId(), "\n";
-	return 0
+
+	char weapon = weapons_list[5];
+	std::cout << weapon, "\n";
+
+	return 0;
+
+}
