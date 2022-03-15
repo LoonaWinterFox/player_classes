@@ -1,4 +1,3 @@
-
 #include <iostream>
 
 /*
@@ -55,6 +54,12 @@ int main(){
 	char weapon = weapons_list[5];
 	std::cout << weapon, "\n";
 
+	char* wl = &weapons_list[0];
+	*(wl + 4) = 'a';
+
+	weapon = *(wl + 4);
+
+	std::cout << weapon, "\n";
 	return 0;
 
 }
