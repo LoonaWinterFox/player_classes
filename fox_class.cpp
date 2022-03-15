@@ -8,7 +8,7 @@ private:
 
 public:
 	void Pet(char* response){
-		char message[] = "*Happy Fox Sounds*\n";
+		char message[] = "*Happy Fox Sounds*";
 		for (int i = 0; i < sizeof(message); i++){
 			response[i] = message[i];
 		}
@@ -29,6 +29,6 @@ int main(){
 */
 	char out[100];
 	fox.Pet(out);
-	std::cout << out, "\n";
+	std::cout << out << "\n";
 	return 0;
 }
