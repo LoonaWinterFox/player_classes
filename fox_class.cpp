@@ -2,7 +2,6 @@
 
 class Fox{
 private:
-	char name[] = "";
 	const bool is_cute = true;
 	int age;
 	bool floof = true;
@@ -20,7 +19,7 @@ public:
 
 int main(){
 	Fox fox[20];
-	for (int i = 0; i < 20, i++){
+	for (int i = 0; i < 20, i++;){
 		fox[i].PetFox();
 	}
 
