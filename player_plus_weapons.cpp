@@ -3,13 +3,14 @@
 
 typedef int Weapon;
 class Player{
+Weapons weapon[1000];
 private:
 	float x, y, z = 0.0;
 	float speed;
 	int max_health;
 	int health;
 	bool is_alive = true;
-	Weapon weapon = 5;
+	Weapon weapon[];
 public:
 	float GetHealth(){return health;}
 	float GetX(){return x;}
