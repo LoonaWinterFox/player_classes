@@ -33,7 +33,6 @@ int main(){
 	Player player;
 	player.SetHealth(100);
 	std::cout << player.GetHealth(), "\n";
-	std::cout << player.GetX(), "\n";
 	
 	return 0;
 }
