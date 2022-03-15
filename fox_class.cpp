@@ -21,14 +21,18 @@ public:
 };
 
 int main(){
-	Fox fox;
-/*
-	for (int i = 0; i < 20, i++;){
-		fox[i].Pet();
+	Fox fox[20];
+
+	char out[100];
+	for (int i = 0; i < 20; i++){
+		std::cout << "Petting Fox Number" << i + 1 << "\n";
+		fox[i].Pet(out);
+		std::cout << out << "\n";
 	}
-*/
+/*
 	char out[100];
 	fox.Pet(out);
 	std::cout << out << "\n";
+*/
 	return 0;
 }
