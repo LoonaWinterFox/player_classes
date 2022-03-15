@@ -7,21 +7,28 @@ private:
 	bool floof = true;
 
 public:
-	void PetFox(){
-		std::cout << "*Happy Fox Sounds*\n";
+	void Pet(char* response){
+		char message[] = "*Happy Fox Sounds*\n";
+		for (int i = 0; i < sizeof(message); i++){
+			response[i] = message[i];
+		}
 	}
 	
-	bool IsFloofy(){
+	bool GetFloofy(){
 		return floof;
 	}
 
 };
 
 int main(){
-	Fox fox[20];
+	Fox fox;
+/*
 	for (int i = 0; i < 20, i++;){
-		fox[i].PetFox();
+		fox[i].Pet();
 	}
-
+*/
+	char out[100];
+	fox.Pet(out);
+	std::cout << out, "\n";
 	return 0;
 }
