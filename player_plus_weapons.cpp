@@ -3,14 +3,14 @@
 
 typedef int Weapon;
 class Player{
-Weapons weapon[1000];
+Weapons weapon_id[1000];
 private:
 	float x, y, z = 0.0;
 	float speed;
 	int max_health;
 	int health;
 	bool is_alive = true;
-	Weapon weapon[];
+	Weapon weapon = 5;
 public:
 	float GetHealth(){return health;}
 	float GetX(){return x;}
@@ -31,8 +31,8 @@ public:
 
 	}
 
-	Weapon* GetWeapon(int index){
-		weapon = index
+	Weapon* GetWeapon(int& list, int index){
+		weapon = list + index;
 		return &(weapon);
 	}
 
@@ -47,5 +47,4 @@ int main(){
 	std::cout << player.GetHealth(), "\n";
 	player->GetWeapon(10);
 	std::cout << player->ReturnWeaponId(), "\n";
-	return 0;
-}
+	return 0
