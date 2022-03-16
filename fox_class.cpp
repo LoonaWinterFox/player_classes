@@ -9,7 +9,7 @@ private:
 public:
 	void Pet(char* response){
 		char message[] = "*Happy Fox Sounds*";
-		for (int i = 0; i < sizeof(message); i++){
+		for (int i = 0; i < (sizeof(message)/sizeof(message[0])); i++){
 			response[i] = message[i];
 		}
 	}
@@ -19,7 +19,6 @@ public:
 	}
 
 };
-
 int main(){
 	Fox fox[20];
 
