@@ -1,0 +1,16 @@
+Learn classes
+	create different types of classes
+	interact with different classes
+	make classes interact with each other
+	use methods in other classes on objects in a class
+	connect class objects like linking a weapon with a player
+
+data structures
+	learn the heap data structure
+	learn the stack
+	learn how to parse data
+
+memory management
+	pointers
+	arrays
+	the heap memory
